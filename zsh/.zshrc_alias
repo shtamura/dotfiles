@@ -1,0 +1,36 @@
+alias c='clear'
+alias mv='mv -i'
+alias cp='cp -i'
+alias h='history 100'
+
+# ls
+alias l='ls -CF'
+alias ls='ls -G'
+alias ll='ls -lGh'
+alias la='ls -laGh'
+alias lt='ls -lartGh'
+alias e='eza -lah --long'
+alias ee='eza -lahg --long --icons'
+alias ea='eza -lahg --long --icons'
+
+# diff
+alias='diffn = diff --name-only'
+alias='diffs = diff --cached'
+alias='dp = diff --no-prefix'
+alias='dsp = diff --cached --no-prefix'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gd='git diff'
+alias gs='git status'
+alias gp='git push'
+alias gpu='git pull'
+alias gb='git branch'
+alias gst='git status'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gc='git commit'
+
+# python
+alias venv='. .venv/bin/activate'

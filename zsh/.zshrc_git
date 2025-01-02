@@ -1,0 +1,24 @@
+# git-promptの読み込み
+source $ZDOTDIR/.zsh/git-prompt.sh
+
+# git-completionの読み込み
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script $ZDOTDIR/.zsh/git-completion.bash
+# autoload -Uz compinit && compinit
+
+# プロンプトのオプション表示設定
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
+function git_color() {
+  local git_info="$(__git_ps1 "%s")"
+  if [[ $git_info == *"%"* ]] || [[ $git_info == *"*"* ]]; then
+    echo '%F{red}'
+  elif [[ $git_info == *"+"* ]]; then
+    echo '%F{green}'
+  else
+    echo '%F{cyan}'
+  fi
+}

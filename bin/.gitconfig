@@ -1,0 +1,31 @@
+[user]
+  name = Shoichi TAMURA
+[core]
+  editor = vim
+  # https://dandavison.github.io/delta/configuration.html
+  pager = delta
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[color]
+  ui = auto
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  up = rebase
+  cm = commit
+	graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'  --date=format-local:'%Y-%m-%d %H:%M (%a)'
+  # logo = log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+  logo = log --oneline
+# https://dandavison.github.io/delta/configuration.html
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  diff-so-fancy=true
+  keep-plus-minus-markers=true
+  minus-emph-style="bold 94 89"
+  plus-emph-style="bold 29 29"
+  hunk-header-style="omit"
+  line-numbers=true
