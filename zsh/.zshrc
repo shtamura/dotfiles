@@ -176,6 +176,11 @@ fi
 # zoxide
 eval "$(zoxide init zsh)"
 
+# uv
+if [ -f "$HOME/.local/bin/env" ]; then
+  . "$HOME/.local/bin/env"
+fi
+
 # # completion
 # fpath=(
 #   ${HOME}/.zsh/completions
@@ -202,13 +207,3 @@ eval "$(zoxide init zsh)"
 # export GOENV_ROOT=$HOME/.goenv
 # export PATH=$GOENV_ROOT/bin:$PATH
 # eval "$(goenv init -)"
-
-# # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/tamurashouichi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tamurashouichi/google-cloud-sdk/path.zsh.inc'; fi
-
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/tamurashouichi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tamurashouichi/google-cloud-sdk/completion.zsh.inc'; fi
-
-if [ -f "$HOME/.local/bin/env" ]; then
-  . "$HOME/.local/bin/env"
-fi

@@ -4,21 +4,18 @@
 
 ### macOS
 
-#### prepare
-
 ```bash
 if [ ! -e /etc/.zshenv ]; then
     echo 'export ZDOTDIR=$HOME' >> /etc/.zshenv
-```
+fi
 
-#### install
-
-```bash
 make osx
 ```
 
-### Linux
+### debian
 
 ```bash
-make linux
+apt update && apt install make
+
+make debian
 ```
