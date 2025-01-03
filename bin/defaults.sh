@@ -11,8 +11,8 @@ exit_if_not_macos
 #----------------------------------------------------------
 # スタンバイまでの時間を24時間へ変更 (デフォルト1時間)
 sudo pmset -a standbydelay 86400
-# ブート時のサウンドの無効化 (寂しい気もしますが煩いので消しています)
-#sudo nvram SystemAudioVolume=" "
+# ブート時のサウンドの無効化
+sudo nvram SystemAudioVolume=" "
 # スクロールバーの常時表示
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # コンソールアプリケーションの画面サイズ変更を高速にする
