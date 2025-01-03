@@ -79,4 +79,6 @@ $RECYCLE.BIN/
 
 zsh/.zsh/*
 zsh/.zcompdump*
+zsh/.zcompcache*
+zsh/.zsh_sessions*
 !zsh/.zsh/.gitkeep

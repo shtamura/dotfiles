@@ -23,7 +23,7 @@ install_command_if_not_installed delta git-delta
 
 # fd
 install_command_if_not_installed fd fd-find
-if [[ $(which fdfind) && ! -f /usr/bin/fd ]]; then
+if [[ $(which fdfind) && -z `which fdfind` ]]; then
     ln -s `which fdfind` /usr/bin/fd
 fi
 

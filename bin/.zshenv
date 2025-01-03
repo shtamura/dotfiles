@@ -1,3 +1,4 @@
-SCRIPT_DIR=$(cd $(dirname $0) && pwd)
-SOURCE_DIR=${$(dirname "$(readlink -f "$SCRIPT_DIR/.zshenv")")//\/bin/}
+# 現在のスクリプトファイル (.zshenv) の絶対パスを取得
+SCRIPT_PATH=${(%):-%x}
+SOURCE_DIR=${$(dirname "$(readlink -f "$SCRIPT_PATH")")//\/bin/}
 export ZDOTDIR=$SOURCE_DIR/zsh
