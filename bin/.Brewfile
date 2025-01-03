@@ -1,8 +1,6 @@
 tap "buildpacks/tap"
 tap "derailed/k9s"
 tap "homebrew/bundle"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 
 # cask "garmin-express"
