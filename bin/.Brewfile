@@ -76,13 +76,13 @@ cask "google-cloud-sdk"
 cask "google-drive"
 cask "google-japanese-ime"
 cask "iterm2"
-cask "kindle"
 cask "messenger"
 cask "notion"
 cask "visual-studio-code"
 cask "windows-app"
 cask "zoom"
 
+mas "Kindle", id: 302584613
 mas "Magnet", id: 441258766
 mas "Paste", id: 967805235
 mas "RunCat", id: 1429033973
