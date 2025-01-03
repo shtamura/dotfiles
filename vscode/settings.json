@@ -221,4 +221,6 @@
     "editor.fontFamily": "'PlemolJP35',  'UDEV Gothic 35', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
+    "http.proxyStrictSSL": false,
+    "makefile.configureOnOpen": true,
 }
