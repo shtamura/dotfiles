@@ -50,6 +50,8 @@ brew "putty"
 brew "pyenv"
 brew "python"
 brew "ripgrep"
+# vim needs ruby (libruby.3.4.dylib)
+brew "ruby"
 brew "stern"
 brew "telnet"
 brew "terminal-notifier"
