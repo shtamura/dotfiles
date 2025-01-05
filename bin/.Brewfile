@@ -76,6 +76,8 @@ cask "google-cloud-sdk"
 cask "google-drive"
 cask "google-japanese-ime"
 cask "iterm2"
+# install karabiner just to disable built-in keyboard when hhkb connected
+cask "karabiner-elements"
 cask "messenger"
 cask "notion"
 cask "visual-studio-code"
