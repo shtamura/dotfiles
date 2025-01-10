@@ -181,6 +181,13 @@ if [ -f "$HOME/.local/bin/env" ]; then
   . "$HOME/.local/bin/env"
 fi
 
+# pyenv
+if which pyenv &> /dev/null ; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init - zsh)"
+fi
+
 # # completion
 # fpath=(
 #   ${HOME}/.zsh/completions
