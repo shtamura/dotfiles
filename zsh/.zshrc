@@ -214,3 +214,5 @@ fi
 # export GOENV_ROOT=$HOME/.goenv
 # export PATH=$GOENV_ROOT/bin:$PATH
 # eval "$(goenv init -)"
+
+[ -f $ZDOTDIR/.zsh/.zshrc.local ] && . $ZDOTDIR/.zsh/.zshrc.local
