@@ -188,6 +188,9 @@ if which pyenv &> /dev/null ; then
   eval "$(pyenv init - zsh)"
 fi
 
+# GPG key
+export GPG_TTY=$(tty)
+
 # # completion
 # fpath=(
 #   ${HOME}/.zsh/completions

@@ -2,6 +2,7 @@ osx:
 	bin/init_osx.sh
 	bin/link.sh
 	bin/brew.sh
+	bin/gpg.sh
 	bin/install_tools.sh
 	bin/defaults.sh
 	bin/font.sh
