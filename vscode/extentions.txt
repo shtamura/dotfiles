@@ -16,6 +16,7 @@ grapecity.gc-excelviewer
 gruntfuggly.todo-tree
 hashicorp.terraform
 hediet.vscode-drawio
+intellsmi.comment-translate
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -37,3 +38,4 @@ vscjava.vscode-java-pack
 vscode-icons-team.vscode-icons
 vscodevim.vim
 yzhang.markdown-all-in-one
+

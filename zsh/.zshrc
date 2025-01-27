@@ -203,9 +203,10 @@ export GPG_TTY=$(tty)
 # # autoload -U +X bashcompinit && bashcompinit
 # # complete -o nospace -C /opt/homebrew/Cellar/tfenv/2.2.3/versions/1.4.2/terraform terraform
 
-# # nodenv
-# export PATH=$PATH:/opt/homebrew/Cellar/nodenv/1.4.1/bin
-# eval "$(nodenv init -)"
+# nodenv
+if which nodenv &> /dev/null ; then
+  eval "$(nodenv init - zsh)"
+fi
 
 # #azure cli
 # autoload -Uz +X bashcompinit && bashcompinit
@@ -218,4 +219,8 @@ export GPG_TTY=$(tty)
 # export PATH=$GOENV_ROOT/bin:$PATH
 # eval "$(goenv init -)"
 
+# vscode shell integration
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
 [ -f $ZDOTDIR/.zsh/.zshrc.local ] && . $ZDOTDIR/.zsh/.zshrc.local
+
