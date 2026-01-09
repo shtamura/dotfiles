@@ -29,3 +29,12 @@
   plus-emph-style="bold 29 29"
   hunk-header-style="omit"
   line-numbers=true
+[includeIf "gitdir:~/repo/en/"]
+	path = ~/.gitconfig.en
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

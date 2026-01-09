@@ -198,7 +198,7 @@ export GPG_TTY=$(tty)
 # )
 # autoload -Uz compinit
 # compinit
-# # 
+# #
 # # terraform completion
 # # autoload -U +X bashcompinit && bashcompinit
 # # complete -o nospace -C /opt/homebrew/Cellar/tfenv/2.2.3/versions/1.4.2/terraform terraform
@@ -223,4 +223,22 @@ fi
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
 [ -f $ZDOTDIR/.zsh/.zshrc.local ] && . $ZDOTDIR/.zsh/.zshrc.local
+
+
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
+
+# disable homebrew auto update
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# Cursor CLI
+export PATH="$HOME/.local/bin:$PATH"
 

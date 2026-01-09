@@ -123,7 +123,6 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.accessibilitySupport": "off",
-    "github.copilot.advanced": {},
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
@@ -217,7 +216,6 @@
     "accessibility.signals.positionHasWarning": {
         "sound": "off"
     },
-    "github.copilot.editor.enableAutoCompletions": true,
     "editor.fontFamily": "'PlemolJP35',  'UDEV Gothic 35', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
@@ -229,7 +227,24 @@
         "tsc",
         "git log",
         "git diff",
-        "git show"
+        "git show",
+        "pytest tests/integration/"
     ],
     "terminal.integrated.defaultProfile.osx": "zsh",
+    "database-client.autoSync": true,
+    "githubPullRequests.terminalLinksHandler": "github",
+    "githubPullRequests.pullBranch": "never",
+    "python.analysis.typeCheckingMode": "standard",
+    "terminal.integrated.scrollback": 100000,
+    "githubPullRequests.fileListLayout": "flat",
+    "git.blame.editorDecoration.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.advanced": {},
+    "github-actions.workflows.pinned.workflows": [],
+    "docker.extension.enableComposeLanguageServer": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "chat.tools.autoApprove": true,
+    "chat.agent.maxRequests": 50,
 }
